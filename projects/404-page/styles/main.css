@@ -126,13 +126,20 @@ header {
   background-color: var(--clr-gray);
 }
 footer {
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-end;
+  font-family: var(--ff-footer);
+  font-weight: 400;
+  font-size: 15px;
+
+  color: var(--clr-neutral-900);
+  flex-wrap: wrap;
+  padding-top: 100px;
 }
 
-.footer__content {
+/* .footer__content {
   text-align: center;
   color: var(--clr-gray);
   font-size: 0.875rem;
@@ -143,7 +150,7 @@ footer {
 .footer__content a {
   color: var(--clr-gray);
   text-decoration: none;
-}
+} */
 
 @media (max-width: 768px) {
   /* .page__container {
