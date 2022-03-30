@@ -58,6 +58,11 @@ picture {
 .page__container .not__found-img {
   width: 31rem;
   margin-right: 100px;
+  transition: 0.3s ease-in-out;
+}
+
+.page__container .not__found-img:hover {
+  transform: scale(1.1);
 }
 
 .page__container .title {
@@ -101,6 +106,12 @@ picture {
 .footer__content {
   text-align: center;
   padding: 1rem;
+  color: var(--clr-gray);
+}
+
+.footer__content a {
+  color: var(--clr-gray);
+  text-decoration: none;
 }
 
 @media (max-width: 375px) {
