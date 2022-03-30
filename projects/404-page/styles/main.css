@@ -7,19 +7,52 @@
   --clr-gray: #4f4f4f;
 }
 
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
+*/ *,
+*::before,
+*::after {
   box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
 }
 
 body {
-  min-height: 100vh;
-  text-rendering: optimizeSpeed;
+  -webkit-font-smoothing: antialiased;
   line-height: 1.5;
   font-family: var(--ff-body);
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
 }
 
 header {
@@ -33,16 +66,6 @@ header {
   color: var(--clr-neutral-900);
 }
 
-button {
-  font-size: inherit;
-}
-
-img,
-picture {
-  max-width: 100%;
-  display: block;
-}
-
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -52,7 +75,7 @@ picture {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  margin-top: 8rem;
 }
 
 .page__container .not__found-img {
@@ -102,11 +125,19 @@ picture {
 .page__container .btn:hover {
   background-color: var(--clr-gray);
 }
+footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
 
 .footer__content {
   text-align: center;
-  padding: 1rem;
   color: var(--clr-gray);
+  font-size: 0.875rem;
+  line-height: 21px;
+  letter-spacing: -0.035em;
 }
 
 .footer__content a {
@@ -114,11 +145,33 @@ picture {
   text-decoration: none;
 }
 
+@media (max-width: 768px) {
+  /* .page__container {
+    min-height: 0;
+  } */
+  .page__container .not__found-img {
+    width: 20rem;
+  }
+
+  .page__container .title {
+    font-size: 2rem;
+  }
+
+  .page__container .information {
+    font-size: 1rem;
+  }
+
+  .page__container .btn {
+    padding: 18px 30px;
+    font-size: 0.75rem;
+  }
+}
+
 @media (max-width: 375px) {
   .page__container {
     flex-direction: column;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
   }
 
   .page__container .not__found-img {
@@ -127,27 +180,27 @@ picture {
   }
 
   .page__container .title {
-    font-size: 48px;
+    font-size: 3rem;
     line-height: 71px;
     letter-spacing: -0.035em;
   }
 
   .page__container .information {
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 27px;
     letter-spacing: -0.035em;
   }
 
   .page__container .btn {
     padding: 16px 30px;
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 21px;
     letter-spacing: -0.035em;
   }
 
   .footer__content {
     padding: 0.5rem;
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 17px;
   }
 }
