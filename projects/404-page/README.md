@@ -2,7 +2,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://{https://challenge-page-404.surge.sh/}">
+    <a href="https://{https://challenge-page-404.surge.sh}">
       Demo
     </a>
     <span> | </span>
