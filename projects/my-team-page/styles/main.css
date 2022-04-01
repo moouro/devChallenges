@@ -1,3 +1,11 @@
+:root {
+  --ff-body: PT 'Serif', serif;
+  --ff-heading: 'PT Serif', serif;
+  --clr-neutral-900: #222;
+  --clr-neutral-300: #ccc;
+  --clr-neutral-100: #fff;
+}
+
 * {
   margin: 0;
 }
