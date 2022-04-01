@@ -6,7 +6,7 @@
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://github.com/moouro/devChallenges/tree/main/projects/404-page}">
       Solution
     </a>
     <span> | </span>
@@ -18,7 +18,7 @@
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+![screenshot](https://github.com/moouro/devChallenges/blob/main/projects/404-page/img/img01.png?raw=true)
 
 ## 🛠 Techonologies
 
