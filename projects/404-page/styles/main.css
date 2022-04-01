@@ -155,6 +155,41 @@ footer {
   }
 }
 
+@media (max-width: 798px) {
+  .page__container {
+    flex-direction: column;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .page__container .not__found-img {
+    max-width: 100%;
+    margin-right: 0;
+  }
+
+  .page__container .title {
+    font-size: 3rem;
+    line-height: 71px;
+  }
+
+  .page__container .information {
+    font-size: 1.125rem;
+    line-height: 27px;
+  }
+
+  .page__container .btn {
+    padding: 16px 30px;
+    font-size: 0.875rem;
+    line-height: 21px;
+  }
+
+  footer {
+    position: initial;
+    margin-top: 4rem;
+    padding: 0.8rem;
+  }
+}
+
 @media (max-width: 375px) {
   .page__container {
     flex-direction: column;
