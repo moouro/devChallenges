@@ -2,11 +2,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://{https://challenge-page-404.surge.sh}">
+    <a href="https://challenge-page-404.surge.sh">
       Demo
     </a>
     <span> | </span>
-    <a href="https://github.com/moouro/devChallenges/tree/main/projects/404-page}">
+    <a href="https://github.com/moouro/devChallenges/tree/main/projects/404-page">
       Solution
     </a>
     <span> | </span>
