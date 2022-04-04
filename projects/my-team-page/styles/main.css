@@ -70,3 +70,18 @@ nav h1 {
   font-size: 18px;
   line-height: 27px;
 }
+
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 0.65fr);
+  margin: 1% 15%;
+}
+
+.card__item > img {
+  width: 80%;
+}
+
+footer {
+  text-align: center;
+  margin-top: 5%;
+}
