@@ -25,6 +25,12 @@ body {
   font-family: var(--ff-body);
 }
 
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
 li {
   list-style: none;
 }
@@ -37,7 +43,8 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 4.2rem;
+  padding: 3rem 0;
+  margin-bottom: 150px;
 }
 
 .hamburger {
