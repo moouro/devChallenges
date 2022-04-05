@@ -23,6 +23,7 @@ body {
   background-color: var(--clr-neutral-900);
   color: var(--clr-neutral-100);
   font-family: var(--ff-body);
+  height: 100vh;
 }
 
 img {
@@ -250,4 +251,29 @@ footer {
   bottom: 0;
   width: 100%;
   text-align: center;
+  color: #a9a9a9;
+}
+
+/* media queries */
+
+@media (max-width: 375px) {
+  .navbar {
+    margin-bottom: 0;
+  }
+  .interior-content {
+    flex-wrap: wrap;
+  }
+  .interior-content .interior-text h1 {
+    font-size: 3.6rem;
+  }
+
+  .interior-content .interior-text p {
+    font-size: 1.4rem;
+  }
+
+  .card-profile {
+    right: 16px;
+    width: 300px;
+    top: 183px;
+  }
 }
