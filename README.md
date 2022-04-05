@@ -11,3 +11,5 @@
 ## Meus Projetos diários
 
 - [Create a 404 not found page](https://github.com/moouro/devChallenges/tree/main/projects/404-page)
+- [My team page](https://github.com/moouro/devChallenges/tree/main/projects/my-team-page)
+- [Interior consultant](https://github.com/moouro/devChallenges/tree/main/projects/interior-consultant)
