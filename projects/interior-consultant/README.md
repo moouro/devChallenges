@@ -2,7 +2,7 @@
 
 <div align="center">
   <h3>
-    <a href="challenge-interior.surge.sh" target="_blank">
+    <a href="https://challenge-interior.surge.sh/" target="_blank">
       Demo
     </a>
     <span> | </span>
