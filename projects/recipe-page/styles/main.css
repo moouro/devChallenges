@@ -88,4 +88,9 @@ h6 {
 .recipe-container {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
+}
+
+footer {
+  text-align: center;
 }
