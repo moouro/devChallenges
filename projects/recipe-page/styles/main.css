@@ -3,6 +3,11 @@
   --ff-heading: 'Playfair Display', serif;
   --clr-neutral-900: hsl(0 0% 0%);
   --clr-neutral-100: hsl(0 0% 100%);
+  --clr-gray-100: #bdbdbd;
+  --clr-gray-200: #828282;
+  --clr-gray-300: #4f4f4f;
+  --clr-gray-900: #333333;
+  --clr-orange-primary: #f2994a;
 }
 
 /*
@@ -76,9 +81,8 @@ h6 {
 
 /* container layout */
 .container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
+  width: min(90%, 960px);
+  margin-inline: auto;
 }
 
 .navbar {
@@ -88,7 +92,6 @@ h6 {
 
 .navbar h1 {
   font-family: var(--ff-heading);
-  font-style: normal;
   font-weight: 700;
   font-size: 4.8rem;
   line-height: 64px;
@@ -101,9 +104,8 @@ h6 {
   font-size: 1.4rem;
   line-height: 17px;
   width: 592px;
-  /* Gray 2 */
 
-  color: #4f4f4f;
+  color: var(--clr-gray-900);
 }
 
 .subtitle {
@@ -121,44 +123,32 @@ h6 {
 }
 
 .recipe-container h2 {
-  font-family: 'Playfair Display';
-  font-style: normal;
+  font-family: var(--ff-heading);
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
   margin-bottom: 32px;
-  /* identical to box height */
 
-  /* Gray 1 */
-
-  color: #333333;
+  color: var(--clr-gray-900);
 }
 
 .recipe-container h3 {
-  font-family: 'Playfair Display';
+  font-family: var(--ff-heading);
   font-style: italic;
-  font-weight: 400;
-  font-size: 18px;
+  font-size: 1.8rem;
   line-height: 24px;
   margin-bottom: 15px;
 
-  /* Gray 1 */
-
-  color: #333333;
+  color: var(--clr-gray-300);
 }
 
 .recipe-subtitle {
-  font-family: 'Playfair Display';
+  font-family: var(--ff-heading);
   font-style: italic;
-  font-weight: 400;
-  font-size: 18px;
+  font-size: 1.8rem;
   line-height: 24px;
   margin-bottom: 32px;
-  /* identical to box height */
-
-  /* Gray 1 */
-
-  color: #333333;
+  color: var(--clr-gray-300);
 }
 
 .statistics--second-row {
@@ -175,21 +165,20 @@ h6 {
 }
 
 .ingredient-checkbox p {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 25px;
-  /* or 156% */
+  font-weight: 400;
+  color: var(--clr-gray-900);
+}
 
-  /* Gray 1 */
-
-  color: #333333;
+.ingredient-checkbox,
+.instructions-box span {
+  font-weight: bold;
 }
 
 .statistics {
-  background: #ffffff;
-  width: 420px;
+  background: var(--clr-neutral-100);
+  width: 216px;
   padding: 5rem 3rem;
   margin: 0;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
@@ -213,21 +202,23 @@ h6 {
 }
 
 .stats__title {
-  font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 700;
-  font-size: 10px;
+  font-size: 1rem;
   line-height: 12px;
   text-transform: uppercase;
-  color: #bdbdbd;
+  color: var(--clr-gray-100);
 }
 
-.stats__value--highlight {
+p.stats__value--highlight {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
+  /* identical to box height */
+
+  /* Orange */
+
   color: #f2994a;
 }
 
@@ -259,26 +250,60 @@ h6 {
 
 .instructions-box {
   display: flex;
-  align-items: center;
-  gap: 1rem;
+  align-items: flex-start;
+  gap: 1.5rem;
   margin-bottom: 32px;
 }
 
+.instructions-box p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  /* or 24px */
+
+  /* Gray 1 */
+
+  color: #333333;
+}
+
 .box {
-  width: 36px;
+  width: 100%;
+  max-width: 36px;
   height: 36px;
-  background: #f2994a;
+  background: var(--clr-orange-primary);
   color: var(--clr-neutral-100);
   border-radius: 6px;
   text-align: center;
   display: flex;
-  align-items: center;
+  align-items: baseline;
   justify-content: center;
-  font-family: 'Playfair Display';
+  font-family: var(--ff-heading);
   font-weight: 700;
   font-size: 24px;
 }
 
-footer {
+.source-link {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 150%;
+
+  color: var(--clr-gray-100);
+}
+
+footer p {
+  margin-top: 10rem;
   text-align: center;
+  font-family: var(--ff-body);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--clr-gray-200);
 }
