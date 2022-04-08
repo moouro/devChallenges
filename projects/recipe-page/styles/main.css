@@ -120,9 +120,71 @@ h6 {
   align-items: flex-start;
 }
 
+.recipe-container h2 {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 32px;
+  /* identical to box height */
+
+  /* Gray 1 */
+
+  color: #333333;
+}
+
+.recipe-container h3 {
+  font-family: 'Playfair Display';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 15px;
+
+  /* Gray 1 */
+
+  color: #333333;
+}
+
+.recipe-subtitle {
+  font-family: 'Playfair Display';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 32px;
+  /* identical to box height */
+
+  /* Gray 1 */
+
+  color: #333333;
+}
+
 .statistics--second-row {
   display: block;
   margin: 0;
+}
+
+.ingredient-checkbox {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  width: 560px;
+  margin-bottom: 2rem;
+}
+
+.ingredient-checkbox p {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  /* or 156% */
+
+  /* Gray 1 */
+
+  color: #333333;
 }
 
 .statistics {
@@ -176,6 +238,45 @@ h6 {
   font-size: 14px;
   line-height: 17px;
   color: #333333;
+}
+
+.instructions {
+  width: 560px;
+}
+
+.instructions h2 {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  /* identical to box height */
+
+  /* Gray 1 */
+
+  color: #333333;
+}
+
+.instructions-box {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 32px;
+}
+
+.box {
+  width: 36px;
+  height: 36px;
+  background: #f2994a;
+  color: var(--clr-neutral-100);
+  border-radius: 6px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Playfair Display';
+  font-weight: 700;
+  font-size: 24px;
 }
 
 footer {
