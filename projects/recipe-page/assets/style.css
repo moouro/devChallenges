@@ -1,0 +1,197 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+  font-size: 18px;
+}
+
+.wrapper {
+  padding: 1rem 2rem;
+  max-width: 60rem;
+  margin: auto;
+}
+.wrapper section {
+  margin: 3rem 0;
+}
+
+.header {
+  margin: 0 0 3rem;
+}
+.header .header__title {
+  font-family: 'Playfair Display', serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2.66rem;
+  color: #000000;
+}
+.header .header__description {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 1rem;
+}
+.header .header__description .header__description--icon {
+  margin-right: 1rem;
+}
+.header .header__description .header__description--text {
+  max-width: 32.88rem;
+  font-family: 'Montserrat', sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 0.77rem;
+  color: #4f4f4f;
+}
+
+.hero > img {
+  width: 100%;
+  border-radius: 0.66rem;
+}
+
+.time .servings {
+  display: flex;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.time .servings .servings__icon {
+  margin-right: 0.5rem;
+}
+.time .servings .servings__title {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.45rem;
+  text-transform: uppercase;
+  color: #bdbdbd;
+}
+.time .servings .servings__count {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.625rem;
+  color: #f2994a;
+}
+.time .preparation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.time .preparation .preparation__card {
+  display: flex;
+}
+.time .preparation .preparation__card .preparation__card_icon {
+  margin-right: 0.5rem;
+}
+.time .preparation .preparation__card .preparation__card_text--label {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.45rem;
+  text-transform: uppercase;
+  color: #bdbdbd;
+}
+.time .preparation .preparation__card .preparation__card_text--time {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.625rem;
+  color: #333333;
+}
+@media screen and (min-width: 700px) {
+  .time {
+    margin-top: 2rem;
+    padding: 2rem 3rem;
+    float: right;
+    background: #ffffff;
+    box-shadow: 0 0 1.11rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.66rem;
+  }
+  .time .preparation {
+    display: block;
+  }
+  .time .preparation > * {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.ingredients .ingredients__title {
+  font-family: 'Playfair Display', serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #333333;
+}
+.ingredients .item .item__title {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 1rem;
+  color: #333333;
+}
+.ingredients .item .item__ingredients label {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  color: #333333;
+}
+
+.instructions .instructions__title {
+  font-family: 'Playfair Display', serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #333333;
+}
+.instructions .instructions__list {
+  counter-reset: my-awesome-counter;
+  list-style: none;
+  padding-left: 3rem;
+}
+.instructions .instructions__list .instructions__element {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.88rem;
+  color: #000000;
+  margin: 0 0 3rem 0;
+  counter-increment: my-awesome-counter;
+  position: relative;
+}
+.instructions .instructions__list .instructions__element::before {
+  content: counter(my-awesome-counter);
+  position: absolute;
+  font-family: 'Playfair Display', serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.33rem;
+  color: #ffffff;
+  --size: 1.77rem;
+  left: calc(-1 * var(--size) - 1rem);
+  height: 2rem;
+  width: 2rem;
+  top: 0;
+  background: #f2984a;
+  border-radius: 0.33rem;
+  text-align: center;
+}
+
+.source {
+  font-family: 'Montserrat', sans-serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 0.66rem;
+  color: #bdbdbd;
+}
+
+.footer {
+  padding: 2rem 0;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.77rem;
+  color: #a9a9a9;
+  text-align: center;
+}
