@@ -2,7 +2,7 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: inherit;
-  font-size: 18px;
+  font-size: 1rem;
 }
 
 .wrapper {
@@ -194,4 +194,10 @@ body {
   font-size: 0.77rem;
   color: #a9a9a9;
   text-align: center;
+}
+
+@media (max-width: 375px) {
+  .header__title {
+    font-size: 1.5rem;
+  }
 }
