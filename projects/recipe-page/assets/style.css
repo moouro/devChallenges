@@ -99,6 +99,7 @@ body {
   font-size: 0.625rem;
   color: #333333;
 }
+
 @media screen and (min-width: 700px) {
   .time {
     margin-top: 2rem;
@@ -196,8 +197,8 @@ body {
   text-align: center;
 }
 
-@media (max-width: 375px) {
-  .header__title {
+@media screen and (max-width: 375px) {
+  .header .header__title {
     font-size: 1.5rem;
   }
 }
